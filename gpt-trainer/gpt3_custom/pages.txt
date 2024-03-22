@@ -1,0 +1,3026 @@
+html
+
+
+
+
+
+
+elementary number theory - Understanding the proof of "$\sqrt{2}$ is irrational" by contradiction. - Mathematics Stack Exchange
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://cdn.sstatic.net/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            StackExchange.ready(function () {
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+
+                StackExchange.question.init({showCitation:true,showAnswerHelp:true,totalCommentCount:12,shownCommentCount:5,enableTables:true,questionId:1020278});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('69', '1020278');
+                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.js-post-body'); });
+
+
+            });
+        
+
+
+
+
+
+
+
+                MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+                    tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+                    TeX: {
+                        extensions: ["begingroup.js"],
+                        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+                        Macros: { href: "{}" }
+                    },
+                    messageStyle: "none",
+                    styles: { ".MathJax_Display, .MathJax_Preview, .MathJax_Preview > *": { "background": "inherit" } },
+                    SEEditor: "mathjaxEditing"
+            });
+            
+
+
+
+
+
+        StackExchange.ready(function () {
+            StackExchange.realtime.init('wss://qa.sockets.stackexchange.com');
+                StackExchange.realtime.subscribeToReputationNotifications('69');
+        StackExchange.realtime.subscribeToTopBarNotifications('69');
+        });
+    
+
+
+{"options":{"locale":"en","serverTime":1692741836,"routeName":"Questions/Show","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Mathematics Stack Exchange","description":"Q\u0026A for people studying math at any level and professionals in related fields","isNoticesTabEnabled":true,"enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":69,"cookieDomain":".stackexchange.com","childUrl":"https://math.meta.stackexchange.com","negativeVoteScoreFloor":null,"enableSocialMediaInSharePopup":true,"protocol":"https"},"user":{"fkey":"dfc49c867ea03e2af4cb25363fb2fa1151cca24e5a44d352c824ce1554fce0ed","tid":"15d3d49b-c167-e917-711d-8c153a1cbc95","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"collectives_survey":{"v":"coso_survey","g":1}}},"realtime":{"newest":true,"active":true,"tagged":true,"staleDisconnectIntervalInHours":0},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}}}}
+
+
+{"settings":{"userMessaging":{},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net"},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"stacksEditorPreviewEnabled":true},"search":{},"questions":{"enableQuestionTitleLengthLiveWarning":true,"enableSavesFeature":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","enableJavascriptImplementationFor":true,"hostBaseUrl":"https://stacksnippets.net"},"paths":{"jQueryUICSSPath":"https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css","jQueryUIJSPath":"https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"cb0f3c87-b769-4e66-bbaa-377f9194216d"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}
+
+
+StackExchange.init();
+
+
+
+        StackExchange.using.setCacheBreakers({"Js/adops.en.js":"6da43f5e0a84","Js/ask.en.js":"","Js/begin-edit-event.en.js":"20edbaccceae","Js/copy-transpiled.en.js":"d31dc7eba3bc","Js/events.en.js":"","Js/explore-qlist.en.js":"2b1f34938b8b","Js/full-anon.en.js":"aafb5c41132d","Js/full.en.js":"069b0e1833ca","Js/highlightjs-loader.en.js":"510e2f94c2bf","Js/inline-tag-editing.en.js":"db4721cf46fa","Js/keyboard-shortcuts.en.js":"107c2ac31497","Js/markdown-it-loader.en.js":"5818ef89ff9d","Js/mentions-transpiled.en.js":"aaeac2684aa8","Js/moderator.en.js":"09ac289a927b","Js/postCollections-transpiled.en.js":"216ffeda5016","Js/post-validation.en.js":"cce75daddbbd","Js/question-editor.en.js":"","Js/review-v2-transpiled.en.js":"69c0e3530e0b","Js/revisions.en.js":"e6acc03fd5b5","Js/stacks-editor.en.js":"146f5c06067a","Js/tageditor.en.js":"dc13482a67f8","Js/tageditornew.en.js":"cebacb19d403","Js/tagsuggestions.en.js":"bd6ec908f2a7","Js/unlimited-transpiled.en.js":"e776ac1beccb","Js/wmd.en.js":"8c0f9d3b0a66","Js/mathjax-editing.en.js":"2581d730d948"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(false);
+        });
+    
+
+
+body,.s-topbar{margin-top:1.9em}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Stack Exchange Network
+
+
+
+						Stack Exchange network consists of 183 Q&A communities including 
+Stack Overflow
+, the largest, most trusted online community for developers to learn, share their knowledge, and build their careers.
+					
+
+
+Visit Stack Exchange
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Loading…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Tour
+                                
+
+                                    Start here for a quick overview of the site
+                                
+
+
+
+
+
+
+
+
+
+                            Help Center
+                            
+
+                                Detailed answers to any questions you might have
+                            
+
+
+
+
+
+
+
+
+
+                                        Meta
+                                        
+
+                                            Discuss the workings and policies of this site
+                                        
+
+
+
+
+
+
+
+
+
+                                    About Us
+                                    
+
+                                        Learn more about Stack Overflow the company, and our products.
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+current community
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Mathematics
+        
+
+
+
+
+
+
+
+
+help
+
+
+chat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Mathematics Meta
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+your communities            
+
+
+
+
+
+
+
+
+Sign up
+ or 
+log in
+ to customize your list.                
+
+
+
+
+
+
+more stack exchange communities
+
+
+
+
+company blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Log in
+
+
+
+
+Sign up
+
+
+
+
+
+
+
+
+
+
+
+		StackExchange.ready(function () { StackExchange.topbar.init(); });
+		StackExchange.scrollPadding.setPaddingTop(50, 10); 
+	
+
+
+
+
+
+
+
+
+Mathematics Stack Exchange is a question and answer site for people studying math at any level and professionals in related fields. It only takes a minute to sign up.
+
+
+Sign up to join this community
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Anybody can ask a question
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Anybody can answer
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    The best answers are voted up and rise to the top
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    StackExchange.ready(function () {
+        StackExchange.Hero.init("nso", "a");
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;
+        }
+
+        $('.js-cta-button').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+
+        // TODO: we should review the class names and whatnot in use here. Older heroes use id selectors, the newer
+        // sticky question hero on SO has a .js-dismiss class instead, but it's apparently not used anywhere... 
+        // It's not great. Ideally we'd have a set of classes in the partials above that would correspond to 
+        // the behaviours we want here in a more clear way. 
+
+        // sticky question-page hero at the bottom of the page on SO
+        $('.js-dismiss').on('click', function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close", location: location }, true);
+            });
+            StackExchange.Hero.dismiss();
+            $(".js-dismissable-hero").fadeOut("fast");
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Home
+                
+
+
+
+
+
+
+
+
+
+
+
+
+Public
+
+
+
+
+
+
+ 
+Questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Tags
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Users
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Unanswered
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Teams
+
+
+
+
+Stack Overflow for Teams
+
+        – Start collaborating and sharing organizational knowledge.
+        
+        
+
+
+Create a free Team
+
+
+Why Teams?
+
+
+
+
+
+
+
+
+Teams
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Create free Team
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Teams
+
+
+Q&A for work
+
+
+Connect and share knowledge within a single location that is structured and easy to search.
+
+
+
+                    Learn more about Teams
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Understanding the proof of "$\sqrt{2}$ is irrational" by contradiction.
+
+
+
+
+
+        Ask Question
+    
+
+
+
+
+
+
+
+
+
+
+Asked
+
+
+8 years, 9 months ago
+
+
+
+
+
+
+Modified
+
+
+1 year, 1 month ago
+
+
+
+
+
+
+Viewed
+
+                        7k times
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            11
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+
+
+I have some difficulties in understanding the proof of "
+$\sqrt{2}$
+is irrational" by contradiction. I am reading it in 10th class(in India) Mathematics book( available online, 
+here
+ )
+
+
+This is the snapshot of it:
+
+
+
+
+The proof starts with assuming that 
+$\sqrt{2}$
+ can be written as a ratio of two integers and then that this fraction can be reduced to its lowest terms i.e. 
+$\sqrt{2}=\dfrac ab$
+, where gcd(a,b)=1 . Then at last we reach at the contradiction that gcd
+$(a,b)\neq1$
+. Then they say that because of this contradiction 
+$\sqrt{2}$
+ cannot be a rational number.
+
+
+What I do not understand is that how the contradiction proves that 
+$\sqrt{2}$
+ cannot be a rational number. The contradiction only proves that 
+$\sqrt{2}$
+ cannot be written as the ratio of two coprime numbers. But can't we write 
+$\sqrt{2}$
+ as the ratio of two non-coprime numbers?
+
+
+Let us consider two statements, X and Y as:
+
+
+
+
+X
+: 
+$\sqrt{2}$
+ cannot be written as the ratio of two coprime numbers.
+
+
+Y
+: 
+$\sqrt{2}$
+ cannot be written as the ratio of two non-coprime numbers.
+
+
+
+
+The contradiction proves only the statement X not the statement Y.
+
+
+I guess that we can prove statement Y from X as:
+Let us suppose that 
+$\sqrt{2}$
+ can be written as the ratio of two non-coprime numbers, i.e. 
+$\sqrt{2}=\dfrac RS$
+, where 
+$R$
+ and 
+$S$
+ are mutually non-coprime. But every rational number can be written as a  fraction 
+in lowest terms
+. So let's say 
+$\dfrac RS$
+ in its lowest terms is 
+$\dfrac rs$
+, but this means that 
+$\sqrt{2}$
+ is also equal to 
+$\dfrac rs$
+, where 
+$r$
+ and 
+$s$
+ are coprime. This eventually  contradicts the statement 
+X
+, hence by contradiction 
+$\sqrt{2}$
+ cannot be written as the ratio of two non-coprime numbers, or the statement 
+Y
+ is true.
+
+
+Question:
+
+
+1. Did I prove the statement Y from X correctly ?
+
+
+2. Why does the book directly mention "
+$\sqrt{2}$
+ is irrational" without justifying statement Y? Is the justification too trivial to be mentioned?
+
+
+3. Is there any other way than mine(proof by contradiction) to deduce Y from X?
+
+
+I only want to clarify these three doubts, nothing else.
+
+
+
+
+
+
+
+
+
+
+elementary-number-theory
+logic
+proof-verification
+radicals
+rationality-testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+Cite
+
+
+
+
+
+
+
+                    Follow
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+edited 
+Jun 12, 2020 at 10:38
+
+
+
+
+
+
+
+
+
+
+
+
+Community
+Bot
+
+
+
+
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        asked 
+Nov 13, 2014 at 16:39
+
+
+
+
+
+
+
+
+
+
+
+
+user103816
+user103816
+
+
+
+
+3,771
+6
+6 gold badges
+37
+37 silver badges
+60
+60 bronze badges
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\endgroup$
+
+
+
+
+12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+Y can (trivially) be reduced to statement X.
+
+
+$\endgroup$
+
+
+
+– 
+Frank Vel
+
+
+
+
+Nov 13, 2014 at 16:44
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+possible duplicate of 
+Query about Reductio Ad Absurdum
+.  (The title does't suggest it, but that person's question is just like yours, and my answer to that question is just what I would say to you.  Key point: “The claim that $a$ and $b$ have no common factor is not an assumption.”)
+
+
+$\endgroup$
+
+
+
+– 
+MJD
+
+
+
+
+Nov 13, 2014 at 16:50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+Every rational number can be written uniquely as a fraction in "lowest terms".
+
+
+$\endgroup$
+
+
+
+– 
+Chazz
+
+
+
+
+Nov 13, 2014 at 16:55
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+@user31782 If it could be written as two non-coprime numbers, that would be equivalent to being possible to write it as two coprime numbers. Thus, it is enough to consider the case where $a$ and $b$ are coprime.
+
+
+$\endgroup$
+
+
+
+– 
+Frank Vel
+
+
+
+
+Nov 13, 2014 at 18:00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+@user31782 Examples: $\frac{12}{16}$ can be reduced to $\frac{3}{4}$, and this is true for all non-coprime numbers. Thus if it can't be written as fraction of coprime numbers, it cannot be written as a fraction with non-coprime numbers. E.g. if it cannot be written as $\frac{1}{2}$ it cannot be written as $\frac{12}{16}$ nor any reducible fraction of the form $\frac{1\times k}{2\times k}$ for $k \in \mathbb{Z}$. And yes it is trivial, although nothing can ever be too trivial not to question.
+
+
+$\endgroup$
+
+
+
+– 
+Frank Vel
+
+
+
+
+Nov 13, 2014 at 18:06
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ | 
+
+
+Show 
+7
+ more comments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        2 Answers
+                                    
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Sorted by:
+        
+
+
+
+            Reset to default
+        
+
+
+
+
+
+
+
+
+
+                        Highest score (default)
+                    
+
+
+
+                        Date modified (newest first)
+                    
+
+
+
+                        Date created (oldest first)
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            6
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+
+
+What is a rational number? The definition I use is that it's a number that can be written as a ratio of two integers. If your book doesn't say explicitly that the integers can be coprime, it's because the notion of a reduced fraction is fundamental to working with fractions. You're not allowed to work with fractions until you believe that they can be written in a unique reduced form, and that your numerator and denominator will be coprime.
+
+
+If you wanted to, you can prove this with the fundamental theorem of arithmetic. Suppose your rational number $q$ can be written as the ratio of integers $\frac{a}{b}$. Then by the fundamental theorem of arithmetic, $a$ and $b$ have unique factorizations into primes. So factorize them, and the factors that appear in both will cancel. Then you have a coprime numerator and denominator.
+
+
+In the proof that you're trying, I don't see the need for contradiction. Statement 
+X
+ and 
+Y
+ imply each other. If you have a ratio of non-coprime numbers, reduce it. If you have a ratio of coprime numbers, multiply them both by 2 and now you have a ratio of non-coprime numbers. (The statements you have written are the contrapositive of this.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+Cite
+
+
+
+
+
+
+
+                    Follow
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        answered 
+Nov 13, 2014 at 16:57
+
+
+
+
+
+
+
+
+
+
+
+
+NoName
+NoName
+
+
+
+
+2,945
+1
+1 gold badge
+14
+14 silver badges
+34
+34 bronze badges
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\endgroup$
+
+
+
+
+5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+How X directly implies Y?  Do you mean that X can be reduced to Y without any proof?
+
+
+$\endgroup$
+
+
+
+– 
+user103816
+
+
+
+
+Nov 13, 2014 at 17:43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+Whether or not something requires proof depends on the reader. If you can agree with me that the contrapositive of a statement is logically equivalent to the statement, then in my last paragraph, I've proved that X implies Y.
+
+
+$\endgroup$
+
+
+
+– 
+NoName
+
+
+
+
+Nov 14, 2014 at 17:51
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+Actually I heard the term "contrapositive" for the first time. I will reply you soon once I read about it.
+
+
+$\endgroup$
+
+
+
+– 
+user103816
+
+
+
+
+Nov 15, 2014 at 8:43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+Thanks a lot for introducing me the term 
+contrapositive
+. Had I read about it before I would not have ask any question. The wikipedea page specifically answer what my questions is, 
+en.wikipedia.org/wiki/Contraposition#Application
+
+
+$\endgroup$
+
+
+
+– 
+user103816
+
+
+
+
+Nov 15, 2014 at 14:46
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+Yes, that section is very relevant to your original question!
+
+
+$\endgroup$
+
+
+
+– 
+NoName
+
+
+
+
+Nov 15, 2014 at 20:04
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Add a comment
+
+
+ | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            -1
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\begingroup$
+
+
+
+
+Let 
+$\sqrt2 = a/b$
+ where 
+$a$
+ and 
+$b$
+ are not co-prime, that is they have a common divisor greater than or equal to 
+$2$
+, so let 
+$d = gcd(a, b)$
+, 
+$a’=a/d$
+, 
+$b’=b/d$
+. Now 
+$a’/b’ = a/b = \sqrt2$
+, and 
+$a’$
+, 
+$b’$
+ are co-prime.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+Cite
+
+
+
+
+
+
+
+                    Follow
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+edited 
+Jul 14, 2022 at 15:40
+
+
+
+
+
+
+
+
+
+
+
+
+Mason
+
+
+
+
+3,760
+1
+1 gold badge
+15
+15 silver badges
+40
+40 bronze badges
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        answered 
+Jun 16, 2021 at 20:30
+
+
+
+
+
+
+
+
+
+
+
+
+gnasher729
+gnasher729
+
+
+
+
+9,111
+17
+17 silver badges
+35
+35 bronze badges
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$\endgroup$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Add a comment
+
+
+ | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    You must 
+log in
+ to answer this question.
+                                
+
+
+
+
+
+Not the answer you're looking for? Browse other questions tagged 
+elementary-number-theory
+logic
+proof-verification
+radicals
+rationality-testing
+.                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Featured on Meta
+                        
+
+
+
+
+
+
+ 
+
+
+
+
+Moderation strike: Results of negotiations
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+Our Design Vision for Stack Overflow and the Stack Exchange network
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Linked
+
+
+
+
+
+
+
+
+1
+
+
+
+
+Query about Reductio Ad Absurdum
+
+
+
+
+
+
+
+
+
+
+Related
+
+
+
+
+
+
+
+
+0
+
+
+
+
+Contradiction proof of the product of two irrational numbers
+
+
+
+
+
+
+
+
+5
+
+
+
+
+Proof verification: Let $a$ be an irrational number and $r$ be a nonzero rational number. If $s$ is a rational number then $ar$ + $s$ is irrational
+
+
+
+
+
+
+
+
+3
+
+
+
+
+How to adapt proof by contradiction showing that a sqrt(2) is irrational for sqrt(20)?
+
+
+
+
+
+
+
+
+7
+
+
+
+
+Proving $\,2\sqrt 2 + 1\,$ is irrational by contradiction
+
+
+
+
+
+
+
+
+0
+
+
+
+
+What's the error in my proof of the statement: The product of two irrational numbers is irrational?
+
+
+
+
+
+
+
+
+0
+
+
+
+
+proof by contradiction of rational numbers
+
+
+
+
+
+
+
+
+
+                 $(document).ready(function() {
+                     $(".js-gps-related-questions .spacer").click(function () {
+                        fireRelatedEvent($(this).index() + 1, $(this).data('question-id'));
+                     });
+
+                 function fireRelatedEvent(position, questionId) {
+                     StackExchange.using("gps", function() {
+                         StackExchange.gps.track('related_questions.click',
+                         {
+                             position: position,
+                             originQuestionId: 1020278,
+                             relatedQuestionId: +questionId,
+                             location: 'sidebar',
+                             source: 'Baseline'
+                         });    
+                     });
+                 }
+             });
+         
+
+
+
+
+
+
+
+            Hot Network Questions
+        
+
+
+
+
+
+
+
+
+
+                    9 types of puzzles I like
+                
+
+
+
+
+
+
+
+                    How do you determine purchase date when there are multiple stock buys?
+                
+
+
+
+
+
+
+
+                    Any difference between: "I am so excited." AND "I am just so excited."
+                
+
+
+
+
+
+
+
+                    Securing Cabinet to wall: better to use two anchors to drywall or one screw into stud?
+                
+
+
+
+
+
+
+
+                    Is Tor over VPN a security risk?
+                
+
+
+
+
+
+
+
+                    Why does my RCCB keeps tripping every time I want to start a 3-phase motor?
+                
+
+
+
+
+
+
+
+                    Why don't airlines like when one intentionally misses a flight to save money?
+                
+
+
+
+
+
+
+
+                    '80s–'90s science fiction children's book about a gold monkey robot stuck on a planet like a junkyard
+                
+
+
+
+
+
+
+
+                    What are they called?
+                
+
+
+
+
+
+
+
+                    What temperature should pre cooked salmon be heated to?
+                
+
+
+
+
+
+
+
+                    Past Perfect vs Past Continuous
+                
+
+
+
+
+
+
+
+                    Why does a flat plate create less lift than an airfoil at the same AoA?
+                
+
+
+
+
+
+
+
+                    Metronome with built-in microphone
+                
+
+
+
+
+
+
+
+                    Is DAC used as stand-alone IC in a circuit?
+                
+
+
+
+
+
+
+
+                    How do I reliably capture the output of 'ls' in this script?
+                
+
+
+
+
+
+
+
+                    Was there a supernatural reason Dracula required a ship to reach England in Stoker?
+                
+
+
+
+
+
+
+
+                    What if the president of the US is convicted at state level?
+                
+
+
+
+
+
+
+
+                    How do I type the Telugu character ఎ?
+                
+
+
+
+
+
+
+
+                    Level of grammatical correctness of native German speakers
+                
+
+
+
+
+
+
+
+                    How does an endoscope form the image?
+                
+
+
+
+
+
+
+
+                    Do non physical causes exist?
+                
+
+
+
+
+
+
+
+                    Is it possible to go to trial while pleading guilty to some or all charges?
+                
+
+
+
+
+
+
+
+                    Lactose-free condensed milk
+                
+
+
+
+
+
+
+
+                    Tool for impacting screws — What is it called?
+                
+
+
+
+
+
+
+
+            more hot questions
+        
+
+
+
+
+
+
+
+
+
+            Question feed
+        
+
+
+
+
+
+
+
+
+
+                Subscribe to RSS
+            
+
+
+
+
+
+
+
+                        Question feed
+                        
+To subscribe to this RSS feed, copy and paste this URL into your RSS reader.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+StackExchange.ready(function(){$.get('/posts/1020278/ivc/051c?prg=0f8b695b-1b00-4465-946f-bdcc54863092');});
+
+
+
+
+
+
+
+
+
+    var cam = cam || { opt: {} };
+    var clcGamLoaderOptions = cam || { opt: {} };
+    var opt = clcGamLoaderOptions.opt;
+
+        opt.refresh = !1;
+    opt.refreshInterval = 0;
+    opt.sf = !1;
+    opt.hb = !1;
+    opt.ll = !0;
+    opt.tlb_position = 0;
+    opt.personalization_consent = !1;
+    opt.targeting_consent = !1;
+    opt.performance_consent = !1;
+
+    opt.targeting = {Registered:['false'],NumberOfAnswers:['2']};
+    opt.adReportEnabled = !1;
+    opt.adReportUrl = '/ads/report-ad';
+    opt.adReportText = 'Report this ad';
+	opt.adReportFileTypeErrorMessage = 'Please select a PNG or JPG file.';
+    opt.adReportFileSizeErrorMessage = 'The file must be under 2 MiB.';
+	opt.adReportErrorText = 'Error uploading ad report.';
+	opt.adReportThanksText = 'Thanks for your feedback. We’ll review this against our code of conduct and take action if necessary.';
+    opt.adReportLoginExpiredMessage = 'Your login session has expired, please login and try again.';
+    opt.adReportLoginErrorMessage = 'An error occurred when loading the report form - please try again';
+	opt.adReportModalClass = 'js-ad-report';
+
+    opt.requestGuid = '0f8b695b-1b00-4465-946f-bdcc54863092';
+
+
+    opt.targeting.TargetingConsent = ['False_Passive'];
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('dfptestads')) {
+        const dfptestads = urlParams.get('dfptestads');
+        opt.targeting.DfpTestAds = dfptestads;
+    }
+
+
+
+;(()=>{"use strict";var __webpack_modules__={23:(e,t,o)=>{o.d(t,{Z7:()=>d,eq:()=>r,kG:()=>n});const s=/^\/tags\//.test(location.pathname)||/^\/questions\/tagged\//.test(location.pathname)?"tag-pages":/^\/$/.test(location.pathname)||/^\/home/.test(location.pathname)?"home-page":"question-pages";let i=location.hostname;const a={slots:{lb:[[728,90]],mlb:[[728,90]],smlb:[[728,90]],bmlb:[[728,90]],sb:e=>"dfp-tsb"===e?[[300,250],[300,600]]:[[300,250]],"tag-sponsorship":[[730,135]],"mobile-below-question":[[320,50],[300,250]],msb:[[300,250],[300,600]],"talent-conversion-tracking":[[1,1]],"site-sponsorship":[[230,60]]},ids:{"dfp-tlb":"lb","dfp-mlb":"mlb","dfp-smlb":"smlb","dfp-bmlb":"bmlb","dfp-tsb":"sb","dfp-isb":"sb","dfp-tag":"tag-sponsorship","dfp-msb":"msb","dfp-sspon":"site-sponsorship","dfp-m-aq":"mobile-below-question"},idsToExcludeFromAdReports:["dfp-sspon"]};function n(){return Object.keys(a.ids)}function r(e){return a.idsToExcludeFromAdReports.indexOf(e)<0}function d(e){var t=e.split("_")[0];const o=a.ids[t];let n=a.slots[o];return"function"==typeof n&&(n=n(t)),{path:`/248424177/${i}/${o}/${s}`,sizes:n,zone:o}}},865:(e,t,o)=>{function s(e){return"string"==typeof e?document.getElementById(e):e}function i(e){return!!(e=s(e))&&"none"===getComputedStyle(e).display}function a(e){return!i(e)}function n(e){return!!e}function r(e){return/^\s*$/.test(s(e).innerHTML)}function d(e){const{style:t}=e;t.height=t.maxHeight=t.minHeight="auto",t.display="none"}function l(e){const{style:t}=e;t.height=t.maxHeight=t.minHeight="auto",t.display="none",[].forEach.call(e.children,l)}function c(e){const{style:t}=e;t.height=t.maxHeight=t.minHeight="auto",t.removeProperty("display")}function p(e){const t=document.createElement("script");t.src=e,document.body.appendChild(t)}function g(e){return o=e,(t=[]).push=function(e){return o(),delete this.push,this.push(e)},t;var t,o}function h(e){let t="function"==typeof HTMLTemplateElement;var o=document.createElement(t?"template":"div");return e=e.trim(),o.innerHTML=e,t?o.content.firstChild:o.firstChild}o.d(t,{$Z:()=>c,Bv:()=>h,Gx:()=>p,Nj:()=>s,QZ:()=>g,cf:()=>d,pn:()=>a,wo:()=>l,xb:()=>r,xj:()=>i,yb:()=>n})},763:(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{t:()=>AdReports});var _common_helper__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__(865),_console__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(276),_ad_units__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(23);class AdReports{constructor(e,t){if(this.googletag=e,this.cam=t,this.allowedFileTypes=["image/png","image/jpg","image/jpeg"],this.ignoreValidation=!1,_console__WEBPACK_IMPORTED_MODULE_1__.cM("Ad reporting init"),this.cam=t,this.callOnButtonClick=e=>this.onButtonClick(e),this.googletag.pubads().addEventListener("slotRenderEnded",e=>this.handleSlotRendered(e)),Array.isArray(t.slotsRenderedEvents)){_console__WEBPACK_IMPORTED_MODULE_1__.cM("Adding report button to "+t.slotsRenderedEvents.length+" events that have transpired");for(var o=0;o<t.slotsRenderedEvents.length;o++)this.handleSlotRendered(t.slotsRenderedEvents[o])}}handleSlotRendered(e){if(e&&e.slot&&!e.isEmpty&&(e.creativeId||e.lineItemId||!e.isEmpty)){var t=e.slot.getSlotElementId();if(t){var o=document.getElementById(t);if(o)if((0,_ad_units__WEBPACK_IMPORTED_MODULE_0__.eq)(t)){var s=o?.closest(".js-zone-container")?.querySelector(".js-report-ad-button-container");s.innerHTML="",s.append(this.createButton(e)),s.style.height="24px",_console__WEBPACK_IMPORTED_MODULE_1__.cM("Added report button to the bottom of "+t)}else _console__WEBPACK_IMPORTED_MODULE_1__.cM("Not adding report button to the bottom of "+t+": shouldHaveReportButton = false");else _console__WEBPACK_IMPORTED_MODULE_1__.cM("Not adding report button to the bottom of "+t+": resolved invalid adUnit element")}else _console__WEBPACK_IMPORTED_MODULE_1__.cM("Not adding report button to the bottom of element: invalid adUnitElementId")}else _console__WEBPACK_IMPORTED_MODULE_1__.cM("Not adding report button to the bottom of element: invalid SlotRenderEndedEvent")}async onButtonClick(e){e.preventDefault();let t=e.target;const o=t.dataset.modalUrl,s=t.dataset.googleEventData;return await this.loadModal(o,t,s),!1}createButton(e){let t=document.createElement("button");var o=JSON.stringify(e);return t.dataset.googleEventData=o,t.dataset.modalUrl=this.cam.opt.adReportUrl,t.dataset.adUnit=e.slot.getSlotElementId(),t.classList.add("js-report-ad","s-btn","s-btn__link","fs-fine","mt2","float-right"),t.append(document.createTextNode(this.cam.opt.adReportText)),t.removeEventListener("click",this.callOnButtonClick),t.addEventListener("click",this.callOnButtonClick),t}async loadModal(url,$link,googleEventData){try{await window.StackExchange.helpers.loadModal(url,{returnElements:window.$($link)}),this.initForm(googleEventData)}catch(e){var message="",response=e.responseText?eval(`(${e.responseText})`):null;message=response&&response.isLoggedOut?this.cam.opt.adReportLoginExpiredMessage:this.cam.opt.adReportLoginErrorMessage,window.StackExchange.helpers.showToast(message,{type:"danger"})}}removeModal(){window.StackExchange.helpers.closePopups(document.querySelectorAll("."+this.cam.opt.adReportModalClass),"dismiss")}initForm(e,t=!1){this.ignoreValidation=t,this.$form=document.querySelector(".js-ad-report-form"),this.$googleEventData=this.$form.querySelector(".js-json-data"),this.$adReportReasons=this.$form.querySelectorAll(".js-ad-report-reason"),this.$adReportReasonOther=this.$form.querySelector(".js-ad-report-reason-other"),this.$fileUploaderInput=this.$form.querySelector(".js-file-uploader-input"),this.$imageUploader=this.$form.querySelector(".js-image-uploader"),this.$clearImageUpload=this.$form.querySelector(".js-clear-image-upload"),this.$imageUploaderText=this.$form.querySelector(".js-image-uploader-text"),this.$imageUploaderPreview=this.$form.querySelector(".js-image-uploader-preview"),this.$fileErrorMessage=this.$form.querySelector(".js-file-error");const o=this.$form.querySelector(".js-drag-drop-enabled"),s=this.$form.querySelector(".js-drag-drop-disabled");this.$googleEventData.value=e,this.$adReportReasons.forEach((e,t)=>e.addEventListener("change",e=>{this.$adReportReasonOther.classList.toggle("d-none","3"!==e.target.value)})),this.$fileUploaderInput.addEventListener("change",()=>{this.validateFileInput()&&this.updateImagePreview(this.$fileUploaderInput.files)}),this.$clearImageUpload.addEventListener("click",e=>{e.preventDefault(),this.clearImageUpload()});try{this.$fileUploaderInput[0].value="",this.$imageUploader.addEventListener("dragenter dragover dragleave drop",this.preventDefaults),this.$imageUploader.addEventListener("dragenter dragover",this.handleDragStart),this.$imageUploader.addEventListener("dragleave drop",this.handleDragEnd),this.$imageUploader.addEventListener("drop",this.handleDrop)}catch(e){o.classList.add("d-none"),s.classList.remove("d-none")}this.$form.removeEventListener("",this.handleDragEnd),this.$form.addEventListener("submit",async e=>(e.preventDefault(),this.submitForm(),!1))}clearImageUpload(){this.$fileUploaderInput.value="",this.$imageUploaderPreview.setAttribute("src",""),this.$imageUploaderPreview.classList.add("d-none"),this.$clearImageUpload.classList.add("d-none"),this.$imageUploaderText.classList.remove("d-none"),this.$imageUploader.classList.add("p16","ba","bas-dashed","bc-black-100")}preventDefaults(e){e.preventDefault(),e.stopPropagation()}handleDragStart(e){this.$imageUploader.classList.remove("bas-dashed"),this.$imageUploader.classList.add("bas-solid","bc-black-100")}handleDragEnd(e){this.$imageUploader.classList.remove("bas-solid","bc-black-100"),this.$imageUploader.classList.add("bas-dashed")}handleDrop(e){var t=e.originalEvent.dataTransfer.files;FileReader&&t&&1===t.length&&(this.$fileUploaderInput.files=t,this.validateFileInput()&&this.updateImagePreview(t))}setError(e){this.$fileErrorMessage.parentElement.classList.toggle("has-error",e)}updateImagePreview(e){this.$imageUploader.classList.remove("p16","ba","bas-dashed","bc-black-100"),this.$clearImageUpload.classList.remove("d-none"),this.$imageUploaderText.classList.add("d-none");var t=new FileReader;t.onload=e=>{null!=e.target&&(this.$imageUploaderPreview.setAttribute("src",e.target.result),this.$imageUploaderPreview.classList.remove("d-none"))},t.readAsDataURL(e[0])}validateFileInput(){if(this.ignoreValidation)return!0;const e=this.cam.opt.adReportFileTypeErrorMessage,t=this.cam.opt.adReportFileSizeErrorMessage;if(null==this.$fileUploaderInput.files)return!1;var o=this.$fileUploaderInput.files[0];return null==o?(this.setError(!0),!1):this.allowedFileTypes.indexOf(o.type)<0?(this.$fileErrorMessage.textContent=e,this.$fileErrorMessage.classList.remove("d-none"),this.setError(!0),!1):o.size>2097152?(this.$fileErrorMessage.textContent=t,this.$fileErrorMessage.classList.remove("d-none"),this.setError(!0),!1):(this.$fileErrorMessage.classList.add("d-none"),this.setError(!1),!0)}async gatherDiagnosticInfo(){return{BrowserVersion:await this.getBrowserVersion()}}getElementSource(e){return e.outerHTML}getNestedIFrameElement(e){var t=e.querySelector("iframe");return t.contentDocument?t.contentDocument.documentElement:t.contentWindow.document.documentElement}async getBrowserVersion(){return await navigator.userAgentData.getHighEntropyValues(["fullVersionList"]).then(e=>JSON.stringify(e.fullVersionList))}async submitForm(){if(!this.validateFileInput())return!1;this.$form.querySelector("[type=submit]").setAttribute("disabled","true");var e=JSON.parse(this.$googleEventData.value||"{}");e.Reason=parseInt(this.$form.querySelector(".js-ad-report-reason:checked").value,10),e.Description=this.$adReportReasonOther.value,this.$googleEventData.value=JSON.stringify(e);var t=new FormData(this.$form);if("1"===t.get("shareDiagnosticInfo")){var o=await this.gatherDiagnosticInfo();Object.keys(o).forEach(e=>t.append(e,o[e]))}try{const e=await window.fetch(this.$form.getAttribute("action"),{method:this.$form.getAttribute("method"),body:t,cache:"no-cache"}),o=e.headers.get("content-type")||"",i=await e.text();if(!e.ok)throw new Error("response not valid");if(0===o.indexOf("text/html")){var s=(0,_common_helper__WEBPACK_IMPORTED_MODULE_2__.Bv)(i);const e=s?s.querySelector(".js-modal-content"):null;if(_console__WEBPACK_IMPORTED_MODULE_1__.cM("$popupContent"),_console__WEBPACK_IMPORTED_MODULE_1__.cM(e),!e)throw new Error(`Could not find .js-modal-content in response from ${this.$form.getAttribute("action")}`);document.querySelector(".js-modal-content").replaceWith(e)}else window.StackExchange.helpers.showToast(this.cam.opt.adReportThanksText,{type:"success"}),this.removeModal()}catch(e){window.StackExchange.helpers.showToast(this.cam.opt.adReportErrorText,{type:"danger"})}finally{let e=this.$form.querySelector("[type=submit]");e&&e.removeAttribute("disabled")}}}},276:(e,t,o)=>{function s(...e){}function i(...e){}o.d(t,{cM:()=>s,vU:()=>i})}},__webpack_module_cache__={};function __webpack_require__(e){var t=__webpack_module_cache__[e];if(void 0!==t)return t.exports;var o=__webpack_module_cache__[e]={exports:{}};return __webpack_modules__[e](o,o.exports,__webpack_require__),o.exports}__webpack_require__.d=(e,t)=>{for(var o in t)__webpack_require__.o(t,o)&&!__webpack_require__.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},__webpack_require__.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t);var __webpack_exports__={};(()=>{var e=__webpack_require__(276),t=(e=>(e[e.Above=0]="Above",e[e.Below=1]="Below",e))(t||{});const o=Object.assign({},{"lib":"https://cdn.sstatic.net/clc/js/bundles/gam_loader_script/gam_loader_script.bundle.741.2316c7770abf0e019f50.min.js","style":null,"u":null,"wa":true,"kt":2000,"tto":true,"h":"clc.stackoverflow.com","allowed":"^(((talent\\.)?stackoverflow)|(blog\\.codinghorror)|(.*\\.googlesyndication)|(serverfault|askubuntu)|([^\\.]+\\.stackexchange))\\.com$","wv":true,"al":false,"abd":true,"cpa_liid":[5882654614],"cpa_cid":[138377597667],"dp":false});var s=__webpack_require__(23),i=__webpack_require__(865),a=__webpack_require__(763);class n{constructor(t,o){this.googletag=t,this.interval=o,e.cM("Ad refresh init. interval: "+o),this.googletag.pubads().addEventListener("impressionViewable",e=>this.onImpressionViewable(e)),e.cM("done enabling ad refresh")}onImpressionViewable(t){var o=t.slot;e.cM("ad refresh - slot "+o.getSlotElementId()+" is viewable, initializing refresh"),this.scheduleRefresh(o)}scheduleRefresh(e){setTimeout(()=>this.refreshAdSlot(e),1e3*this.interval)}refreshAdSlot(t){var o=t.getSlotElementId();this.isElementVisibleInBrowser(o)?(e.cM("refreshing ad slot "+o),googletag.pubads().refresh([t])):(e.cM("refresh skipped this time; ad slot not viewable:"+o),this.scheduleRefresh(t))}isElementVisibleInBrowser(e){var t=document.getElementById(e);if(null!==t){var o=t.getBoundingClientRect();if(o.top>=0&&o.left>=0&&o.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&o.right<=(window.innerWidth||document.documentElement.clientWidth))return!0}return!1}}var r=(e=>(e.Off="Off",e.PreSurvey="PreSurvey",e.Collect="Collect",e.PostSurvey="PostSurvey",e))(r||{});class d{constructor(t,o){this.googletag=t,this.brandSettings=o,this.brandSlotMap=new Map,e.cM("Brand Uplift Survey init: "+JSON.stringify(o)),this.googletag.pubads().addEventListener("slotRenderEnded",e=>this.handleSlotRendered(e)),this.googletag.pubads().addEventListener("impressionViewable",e=>this.onImpressionViewable(e)),e.cM("done enabling brand uplift survey")}handleSlotRendered(t){e.cM("Brand Uplift - slot rendered - slot:"+JSON.stringify(t.slot.getSlotElementId())+" lineItem: "+t.lineItemId);let o=this.findItemWithId(t.lineItemId);if(null===o||o.mode!==r.Collect)this.brandSlotMap.delete(t.slot.getSlotElementId());else{let e={brandId:o.brandId,lineItemId:t.lineItemId};this.brandSlotMap.set(t.slot.getSlotElementId(),e)}}onImpressionViewable(t){let o=t.slot;if(e.cM("ad - brand uplift survey - impression viewable.  Details: "+JSON.stringify(o.getSlotElementId())),e.cM("ad - brand uplift survey - slot "+o.getSlotElementId()+" is viewable"),this.brandSlotMap.has(o.getSlotElementId())){let t=this.brandSlotMap.get(o.getSlotElementId());e.cM("brand uplift survey - brand "+t.brandId+" is viewable"),this.recordImpression(this.brandSlotMap.get(o.getSlotElementId()))}}recordImpression(t){e.cM("ad - brand uplift survey - recording impression for brand "+t.brandId),this.asynchronouslyCallRecordImpressionRoute(t)}findItemWithId(t){return e.cM("brand settings: "+JSON.stringify(this.brandSettings)),this.brandSettings.find(e=>e.lineItemIds.includes(t))||null}asynchronouslyCallRecordImpressionRoute(t){e.cM("ad - brand uplift survey - calling record impression route for brand "+t.brandId),fetch(window.location.origin+"/Ads/Brands/ImpressionViewed",{method:"POST",body:JSON.stringify(t)}).then(o=>o.ok?void e.cM("ad - brand uplift survey - record impression route for brand "+t.brandId+" returned ok"):void e.vU("ad - brand uplift survey - record impression route for brand "+t.brandId+" returned not ok"),t=>{e.vU("network error sending impression to brand route: "+t.message)})}}window.cam=new class{constructor(){this.gptImported=!1,this.collapsed={},e.cM("constructor"),this.clc_options=o,window.clcGamLoaderOptions?Object.assign(this,window.clcGamLoaderOptions):void 0===this.opt&&(this.opt=window.opt)}init(){if(e.cM("init"),void 0===this.opt)throw new Error("opt not set, required by GAM Loader");e.cM("setup message handler"),window.addEventListener("message",e=>{this.onmessage(e)}),this.opt.targeting&&this.opt.targeting.ProductVariant&&"SystemDefault"===this.opt.targeting.ProductVariant[0]&&(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?this.opt.targeting.ProductVariant="Dark":this.opt.targeting.ProductVariant="Light")}handleSlotRenderedNoAdReport(){if(googletag.pubads().addEventListener("slotRenderEnded",e=>this.applyExtraMarginBottom(e)),Array.isArray(this.slotsRenderedEvents))for(var e=0;e<this.slotsRenderedEvents.length;e++)this.applyExtraMarginBottom(this.slotsRenderedEvents[e])}onmessage(t){let o="omni";if(t.data&&("string"==typeof t.data||t.data instanceof String)){if(0===t.data.indexOf("get-omni-")){e.cM("Recevied get-omni message, sending back omni");var s=t.source,a=this.opt.omni,n="string"==typeof a?a:"";s.postMessage([o,n,this.opt.requestGuid].join("|"),"*")}else if(0===t.data.indexOf("collapse-")){e.cM("Recevied collapse message, collapse ad iframe"),e.cM(t);for(var r=t.source.window,d=document.getElementsByTagName("IFRAME"),l=0;l<d.length;l++){var c=d[l];if(c.contentWindow==r)return void(0,i.wo)(c.parentElement.parentElement.parentElement)}}else if(0===t.data.indexOf("resize|")){e.cM("Recevied resize message, resize ad iframe"),e.cM(t);let o=this._getFrameByEvent(t),s=t.data.indexOf("|")+1,i=t.data.slice(s),a=parseFloat(i)+.5;e.cM("New iframe height "+a),o.height=a.toString(),o.parentElement.style.height=a.toString()+"px"}else if(0===t.data.indexOf("getmarkup|")){let o=t.data.indexOf("|")+1,s=t.data.slice(o);e.cM("Recevied get markup message: "+s);let i=this._getFrameByEvent(t).closest(".everyonelovesstackoverflow");const a=document.createElement("script");a.dataset.adZoneId=i.id,a.src=s,document.body.appendChild(a)}else if(0===t.data.indexOf("window-location|")){let o=t.data.indexOf("|")+1,s=t.data.slice(o);e.cM("Recevied window location message: "+s),s.startsWith("/")||(s="/"+s),window.open(window.location.protocol+"//"+window.location.host+s,"_blank")}}else e.cM("Received unhandled message")}_getFrameByEvent(e){return Array.from(document.getElementsByTagName("iframe")).filter(t=>t.contentWindow===e.source)[0]}classifyZoneIds(e){const t=e.map(i.Nj).filter(i.yb);return{eligible:t.filter(i.xb).filter(i.pn),ineligible:t.filter(i.xj)}}applyExtraMarginBottom(t){if(t&&t.slot&&!t.isEmpty&&(t.creativeId||t.lineItemId||!t.isEmpty)){var o=t.slot.getSlotElementId();if(o){var i=document.getElementById(o);if(i)if((0,s.eq)(o)){var a=i?.closest(".js-zone-container");a.style.marginBottom="24px",e.cM("Applied extra margin to the bottom of "+o)}else e.cM("Not applying extra margin to the bottom of "+o+": shouldHaveReportButton = false");else e.cM("Not applying extra margin to the bottom of "+o+": resolved invalid adUnit element")}else e.cM("Not applying extra margin to the bottom of element: invalid adUnitElementId")}else e.cM("Not applying extra margin to the bottom of element: invalid SlotRenderEndedEvent")}load(o=(0,s.kG)()){const r=this.opt.tlb_position===t.Above?["dfp-mlb","dfp-smlb"]:["dfp-mlb","dfp-smlb","dfp-tlb"];if(!this.isGptReady())return e.cM("Initializing..."),this.initGpt(),void googletag.cmd.push(()=>this.load(o));this.opt.adReportEnabled?(e.cM("Ad reporting enabled"),this.adReports=new a.t(googletag,this)):(e.cM("Ad reporting not enabled"),this.handleSlotRenderedNoAdReport()),this.opt.refresh?(e.cM("Ad refresh enabled"),this.adRefresh=new n(googletag,this.opt.refreshInterval)):e.cM("Ad refresh not enabled"),this.opt.brandUpliftSurveyEnabled&&(e.cM("Brand uplift survey enabled"),this.brandUpliftSurvey=new d(googletag,this.opt.brandUpliftSettings)),e.cM("Attempting to load ads into ids: ",o);const{eligible:l,ineligible:c}=this.classifyZoneIds(o);if(this.initDebugPanel(googletag,l.concat(c)),l.forEach(e=>(0,i.cf)(e)),c.forEach(i.wo),0===l.length)return void e.cM("Found no ad ids on page");e.cM("Eligible ids:",l),this.opt.abd&&this.appendAdblockDetector();var p=googletag.pubads().getSlots().filter(e=>o.indexOf(e.getSlotElementId())>=0);googletag.destroySlots(p),this.opt.sf&&(googletag.pubads().setForceSafeFrame(!0),googletag.pubads().setSafeFrameConfig({allowOverlayExpansion:!0,allowPushExpansion:!0,sandbox:!0})),e.cM("Targeting consent: Checking...");let g=!1,h=!1;void 0!==this.opt.targeting_consent&&(h=!0,e.cM("Targeting consent: Parameter set"),e.cM("Targeting consent: Consent given? ",this.opt.targeting_consent),g=this.opt.targeting_consent),void 0!==this.opt.personalization_consent&&(e.cM("Personalization consent: Parameter set"),e.cM("Personalization consent: Consent given? ",this.opt.personalization_consent),g=g&&this.opt.personalization_consent),g=g&&h,googletag.pubads().setRequestNonPersonalizedAds(g?0:1),g||googletag.pubads().setPrivacySettings({limitedAds:!0}),this.opt.ll||googletag.pubads().enableSingleRequest(),cam.sreEvent||(googletag.pubads().addEventListener("slotRenderEnded",e=>this.onSlotRendered(e)),cam.sreEvent=!0),this.setTargeting(googletag);var m=l.filter(e=>!this.opt.ll||r.indexOf(e.id)<0),u=l.filter(e=>!!this.opt.ll&&r.indexOf(e.id)>=0);e.cM("Up front ids:",m),e.cM("Lazy loaded ids:",u),m.forEach(t=>{e.cM(`Defining ad for element ${t.id}`),this.defineSlot(t.id,googletag),t.setAttribute("data-dfp-zone","true")}),googletag.enableServices(),m.forEach(t=>{e.cM(`Displaying ad for element ${t.id}`),googletag.cmd.push(()=>googletag.display(t.id))}),this.opt.ll&&(e.cM("Enabling lazy loading for GAM"),googletag.pubads().enableLazyLoad({fetchMarginPercent:0,renderMarginPercent:0}),e.cM("Setting up lazy loaded ad units"),u.forEach(t=>{e.cM(`Lazy loading - Defining Slot ${t.id}`),this.defineSlot(t.id,googletag)}),u.forEach(t=>{e.cM(`Lazy loading - Displaying ad for element ${t.id}`),googletag.cmd.push(()=>googletag.display(t.id))}))}setTargeting(t){let o=this.opt.targeting;if(!o)throw new Error("Targeting not defined");Object.keys(o).forEach(s=>{e.cM(`-> targeting - ${s}: ${o[s]}`),t.pubads().setTargeting(s,o[s])})}appendAdblockDetector(){const e=document.createElement("div");e.className="adsbox",e.id="clc-abd",e.style.position="absolute",e.style.pointerEvents="none",e.innerHTML="&nbsp;",document.body.appendChild(e)}onSlotRendered(o){try{const n=o.slot.getSlotElementId();let r=[];n||r.push("id=0");const d=document.getElementById(n);if(n&&!d&&r.push("el=0"),0!==r.length)return void this.stalled(r.join("&"));const{path:l,sizes:c,zone:p}=(0,s.Z7)(n);if(this.collapsed[p]&&o.isEmpty)return e.cM(`No line item for the element #${d.id}... collapsing.`),void(0,i.wo)(d);if(this.slotsRenderedEvents.push(o),o.lineItemId||o.creativeId||!o.isEmpty){e.cM(`Rendered ad for element #${d.id} [line item #${o.lineItemId}]`),e.cM(o);var a=d.parentElement;if(a.classList.contains("js-zone-container")){switch((0,i.cf)(a),n){case"dfp-tlb":this.opt.tlb_position===t.Above?a.classList.add("mb8"):a.classList.add("mt16");break;case"dfp-tag":a.classList.add("mb8");break;case"dfp-msb":a.classList.add("mt16");break;case"dfp-mlb":case"dfp-smlb":case"dfp-bmlb":a.classList.add("my8");break;case"dfp-isb":a.classList.add("mt24");break;case"dfp-m-aq":a.classList.add("my12"),a.classList.add("mx-auto")}(0,i.$Z)(a),(0,i.$Z)(d)}else e.cM(`No ad for element #${d.id}, collapsing`),e.cM(o),(0,i.wo)(d)}}catch(e){this.stalled("e=1")}}stalled(e){(new Image).src=`https://${this.clc_options.h}/stalled.gif?${e}`}defineSlot(t,o){"dfp-isb"===t&&(e.cM("-> targeting - Sidebar: Inline"),o.pubads().setTargeting("Sidebar",["Inline"])),"dfp-tsb"===t&&(e.cM("-> targeting - Sidebar: Right"),o.pubads().setTargeting("Sidebar",["Right"]));const{path:i,sizes:a,zone:n}=(0,s.Z7)(t);e.cM(`Defining slot for ${t}: ${i}, sizes: ${JSON.stringify(a)}`),o.defineSlot(i,a,t).addService(o.pubads())}importGptLibrary(){this.gptImported||(this.gptImported=!0,void 0===this.opt.targeting_consent||this.opt.targeting_consent?(0,i.Gx)("https://securepubads.g.doubleclick.net/tag/js/gpt.js"):(0,i.Gx)("https://pagead2.googlesyndication.com/tag/js/gpt.js"))}isGptReady(){return"undefined"!=typeof googletag&&!!googletag.apiReady}initGpt(){"undefined"==typeof googletag&&(window.googletag={cmd:(0,i.QZ)(()=>this.importGptLibrary())})}initDebugPanel(t,o){e.cM("initDebugPanel"),e.cM("Not showing debug panel")}},window.clcGamLoaderOptions&&(cam.init(),cam.load())})()})();
+
+
+
+
+
+
+
+
+
+
+Mathematics
+
+
+
+
+Tour
+
+
+Help
+
+
+Chat
+
+
+Contact
+
+
+Feedback
+
+
+
+
+
+
+
+
+Company
+
+
+
+
+Stack Overflow
+
+
+Teams
+
+
+Advertising
+
+
+Collectives
+
+
+Talent
+
+
+About
+
+
+Press
+
+
+Legal
+
+
+Privacy Policy
+
+
+Terms of Service
+
+
+Cookie Settings
+
+
+Cookie Policy
+
+
+
+
+
+
+
+
+
+
+Stack Exchange Network
+
+
+
+
+
+
+
+                                    Technology
+                                
+
+
+
+
+
+
+
+                                    Culture & recreation
+                                
+
+
+
+
+
+
+
+                                    Life & arts
+                                
+
+
+
+
+
+
+
+                                    Science
+                                
+
+
+
+
+
+
+
+                                    Professional
+                                
+
+
+
+
+
+
+
+                                    Business
+                                
+
+
+
+
+
+
+
+                                    API
+                                
+
+
+
+
+
+
+
+                                    Data
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blog
+
+
+Facebook
+
+
+Twitter
+
+
+LinkedIn
+
+
+Instagram
+
+
+
+
+
+Site design / logo © 2023 Stack Exchange Inc; user contributions licensed under 
+CC BY-SA
+.                    
+rev 2023.8.22.43592
+
+
+
+
+
+
+
+
+
+
+ Google tag (gtag.js) 
+
+
+
+
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+            
+
+
+
+            StackExchange.ready(function() {
+
+                var ga3Settings = {
+                    autoLink: ["stackoverflow.blog","info.stackoverflowsolutions.com","stackoverflowsolutions.com"],
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-5'
+                    ],
+                    checkDimension: 'dimension42'
+                                                    };
+
+                var customGA4Dimensions = {};
+
+
+                var ga4Settings = {
+                    tracker: gtag,
+                    trackingCodes: [
+                        'G-S812YQPLT2'
+                    ],
+                    consentsToPerformanceCookies: "denied",
+                    consentsToTargetingCookies: "denied",
+                    eventParameters: customGA4Dimensions,
+                    checkForAdBlock: true,
+                    sendTitles: true,
+                    trackClicks: false,
+                };
+
+                StackExchange.ga.init({ GA3: ga3Settings, GA4: ga4Settings });
+
+
+                StackExchange.ga.setDimension('dimension2', '|elementary-number-theory|logic|proof-verification|radicals|rationality-testing|');
+
+
+                StackExchange.ga.setDimension('dimension3', 'Questions/Show');
+
+
+                StackExchange.ga.setDimension('dimension7', "1692741836.1116054024");
+
+                StackExchange.ga.trackPageView();
+            });
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Your privacy
+                    
+
+
+
+                        By clicking “Accept all cookies”, you agree Stack Exchange can store cookies on your device and disclose information in accordance with our 
+Cookie Policy
+.
+                    
+
+
+
+
+
+                            Accept all cookies
+                        
+
+
+
+                            Necessary cookies only
+                        
+
+
+
+
+
+
+
+                            Customize settings
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
