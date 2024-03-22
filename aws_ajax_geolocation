@@ -1,0 +1,85 @@
+export const handler = async (event) => {
+    console.log("HTTP Request", JSON.stringify(event));
+    let xmJson = {
+        "metadata": {
+            "version": "2.0"
+        },
+        "content": [
+            {
+                "elementType": "html",
+                "html": "<h2>Geolocation Data</h2>"
+            },
+            {
+                "elementType": "list",
+                "listStyle": "grouped",
+                "items": {
+                    "ajaxRelativePath": "./?page=geolocationUpdate_ajaxUpdate&showLoading=true",
+                    "ajaxOnFirstLoad": false,
+                    "ajaxGeolocationEnabled": true,
+                    "ajaxGeolocationContinuous": false
+                }
+            }
+        ]
+    };
+    //Create some variables to hold the data you are adding to the list items, initialize them to the default values of the list then check to see if the payload has the values and change them to the payload values.
+    let latitude = "42.3940474";
+    let longitude = "-71.1448423";
+    let statusCode = "0";
+    let regionLastUpdated = "03:30:23PM UTC";
+    if ('queryStringParameters' in event && event.queryStringParameters != null && 'latitude' in event.queryStringParameters) {
+        latitude = event.queryStringParameters.latitude;
+    }
+    if ('queryStringParameters' in event && event.queryStringParameters != null && 'longitude' in event.queryStringParameters) {
+        longitude = event.queryStringParameters.longitude;
+    }
+    if ('queryStringParameters' in event && event.queryStringParameters != null && 'statusCode' in event.queryStringParameters) {
+        statusCode = event.queryStringParameters.statusCode;
+    }
+    if ('queryStringParameters' in event && event.queryStringParameters != null && 'regionLastUpdated' in event.queryStringParameters) {
+        regionLastUpdated = event.queryStringParameters.regionLastUpdated;
+    }
+    //Add the list items to the list
+    xmJson.content[1].items = [
+        {
+            "title": "<b>Latitude:</b> " + latitude
+        },
+        {
+            "title": "<b>Longitude:</b> " + longitude
+        },
+        {
+            "title": "<b>Status Code:</b> " + statusCode
+        },
+        {
+            "title": "<b>Region Last Updated:</b> " + regionLastUpdated
+        }
+    ];
+    //If the payload has the showLoading parameter set to true, add the loading element to the list
+    if ('queryStringParameters' in event && event.queryStringParameters != null && 'showLoading' in event.queryStringParameters && event.queryStringParameters.showLoading == 'true') {
+        xmJson.content[1].items.push({
+            "elementType": "loading"
+        });
+    }
+    
+    if ('queryStringParameters' in event && event.queryStringParameters != null && 'page' in event.queryStringParameters && event.queryStringParameters.page == 'geolocationUpdate_ajaxUpdate') {
+        xmJson.regionContent = [
+            {
+                "title": "<b>Latitude:</b> 42.3940474"
+            },
+            {
+                "title": "<b>Longitude:</b> -71.1448423"
+            },
+            {
+                "title": "<b>Status Code:</b> 0"
+            },
+            {
+                "title": "<b>Region Last Updated:</b> 03:30:23PM UTC"
+            }
+        ];
+    }
+
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify(xmJson),
+    };
+    return response;
+};

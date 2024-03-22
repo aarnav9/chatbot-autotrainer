@@ -1,0 +1,67 @@
+export const handler = async (event) => {
+    console.log("HTTP Request", JSON.stringify(event));
+    let xmJson = {
+        "metadata": {
+            "version": "2.0"
+        },
+        "content": [{
+                "elementType": "divider",
+                "borderColor": "transparent"
+            },
+            {
+                "elementType": "container",
+                "id": "preferred_width",
+                "content": [{
+                        "elementType": "sideBySide",
+                        "left": {
+                            "preferredWidth": "50%",
+                            "content": [{
+
+                                "elementType": "blockHeading",
+                                "heading": "Basic Heading Level 1",
+                                "headingLevel": 1
+
+                            }
+                        ]
+                    },
+                        "right": {
+                            "preferredWidth": "50%",
+                            "content": [{
+                                "elementType": "container",
+                                "padding": "medium",
+                                "borderStyle": "solid",
+                                "borderColor": "theme:focal_border_color",
+                                "backgroundColor": "#f4f4f4",
+                                "marginBottom": "none",
+                                "content": [{
+                                    "elementType": "html",
+                                    "html": "<h3><strong>This region is set to a 'preferredWidth' of 50%</strong></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem sem, vulputate ac neque et, dignissim eleifend orci. Praesent ut lorem at risus vestibulum tristique ac vel urna. Morbi et viverra velit. Nunc ullamcorper aliquet ante, vitae placerat diam faucibus maximus.</p>"
+                                }]
+                            }]
+                        }
+                    }
+                ]
+            },
+            getListWithDateTime(),
+        ]
+    };
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify(xmJson),
+    };
+    return response;
+};
+
+//Add a list item using “listStyle”: “grouped” that has one item in the list containing a title with the current server time
+function getListWithDateTime() {
+    return {
+        "elementType": "list",
+        "listStyle": "grouped",
+        "id": "basic_list",
+        "items": [
+            {
+                "title": new Date().toString()
+            }
+        ]
+    };
+}

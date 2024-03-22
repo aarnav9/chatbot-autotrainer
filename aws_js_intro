@@ -1,0 +1,68 @@
+import data from './quests.mjs';
+
+export const handler = async (event) => {
+
+    let xmjson = null;
+
+    xmjson = {
+        "metadata": {
+            "version": "2.0"
+        },
+        "contentContainerWidth": "narrow",
+        "content": []
+    };
+
+    if ('pathParameters' in event && event.pathParameters == null) {
+        let xmstatuslist = {
+            "elementType": "statusList",
+            "id": "status_no_details",
+            "marginTop": "none",
+            "listStyle": "padded",
+            "items": []
+        };
+
+        if (data !== null) {
+            for (let i = 0; i < data.quests.length; i++) {
+                xmstatuslist.items.push({
+                    "title": data.quests[i].name,
+                    "statusText": data.quests[i].status.charAt(0).toUpperCase() + data.quests[i].status.slice(1),
+                    "status": data.quests[i].status == "available" ? data.quests[i].status : "unavailable",
+                    "statusDescriptor": `and pays ${data.quests[i].gold}`,
+                    "link": {
+                        "relativePath": `/details/${data.quests[i].id}`
+                    },
+                });
+            }
+        }
+        xmjson.content.push(xmstatuslist);
+    } else if ('pathParameters' in event && 'id' in event.pathParameters) {
+        
+        const quest = data.quests.find( ({ id }) => id === event.pathParameters.id );
+        
+        xmjson.content.push(
+        {
+            "elementType": "detail",
+            "id": "image_thumbnail",
+            "title": quest.name,
+            "description": `Difficulty: ${quest.difficulty}<br>Power Required: ${quest.recommended_power}<br>Duration: ${quest.duration}`,
+            "byline": `Gold Rewarderd: ${quest.gold} pieces`,
+            "body": quest.description,
+            "label": "Thumbnail",
+            "thumbnail": {
+                "url": quest.photo,
+                "alt": quest.name
+            },
+            "thumbnailSize": "large",
+            "thumbnailBorderRadius": "1rem"
+        });
+    }
+
+    console.log("HTTP Request", JSON.stringify(event));
+
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify(xmjson),
+    };
+
+    return response;
+};

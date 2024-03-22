@@ -1,0 +1,162 @@
+---
+cleric:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Nadara'
+        lastName: 'Rose'
+        email: 'cleric@ourquest.com'
+        name: 'Nadara Rose'
+        race: 'Human'
+        class: 'Cleric'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/cleric.png'
+        gold: '120'
+        skills:
+            - heal
+            - boost strength
+            - turn undead
+        power: '25'
+druid:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Valtor'
+        lastName: 'Moonseer'
+        email: 'druid@ourquest.com'
+        name: 'Valtor Moonseer'
+        race: 'Half-Orc'
+        class: 'Druid'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/druid.png'
+        gold: '50'
+        skills:
+            - animal companion
+            - summon storms
+            - vampire resistance
+        power: '15'
+fighter:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Xandar'
+        lastName: 'Fireforge'
+        email: 'fighter@ourquest.com'
+        name: 'Xandar Fireforge'
+        race: 'Dwarf'
+        class: 'Fighter'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/fighter.png'
+        gold: '150'
+        skills:
+            - heavy armor
+            - any weapon
+            - toughness
+        power: '30'
+monk:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Kaelen'
+        lastName: 'Skye'
+        email: 'monk@ourquest.com'
+        name: 'Kaelen Skye'
+        race: 'Dwarf'
+        class: 'Monk'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/monk.png'
+        gold: '10'
+        skills:
+            - hand to hand combat
+            - darkvision
+            - catch arrows
+        power: '25'
+paladin:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Lirien'
+        lastName: 'Grey'
+        email: 'paladin@ourquest.com'
+        name: 'Lirien Grey'
+        race: 'Human'
+        class: 'Paladin'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/paladin.png'
+        gold: '100'
+        skills:
+            - holy light
+            - divine power
+            - immune to poison
+        power: '30'
+ranger:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Aylen'
+        lastName: 'Wolf'
+        email: 'ranger@ourquest.com'
+        name: 'Aylen Wolf'
+        race: 'Half-Elf'
+        class: 'Ranger'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/ranger.png'
+        gold: '75'
+        skills:
+            - dual wield
+            - sharp shooter
+            - Darkvision
+        power: '25'
+rogue:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Nyx'
+        lastName: 'Shadowdancer'
+        email: 'rogue@ourquest.com'
+        name: 'Nyx Shadowdancer'
+        race: 'Halfling'
+        class: 'Rogue'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/rogue.png'
+        gold: '280'
+        skills:
+            - sneak attack
+            - disarm traps
+            - open locks
+        power: '15'
+sorcerer:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Elara'
+        lastName: 'Stormweaver'
+        email: 'sorcerer@ourquest.com'
+        name: 'Elara Stormweaver'
+        race: 'Human'
+        class: 'Sorcerer'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/sorcerer.png'
+        gold: '120'
+        skills:
+            - dragon breath
+            - arcane incantation
+            - summon elemental
+        power: '15'
+warlock:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Daxen'
+        lastName: 'Darkwood'
+        email: 'warlock@ourquest.com'
+        name: 'Daxen Darkwood'
+        race: 'Dark Elf'
+        class: 'Warlock'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/warlock.png'
+        gold: '135'
+        skills:
+            - compulsion
+            - chill touch
+            - ritual summoning 
+        power: '15'
+wizard:
+    password: '$2y$10$2YxTyg29j3jG4g/4RRCi5ui4rxeZ9LPfm3YBxEo0kB/810t7wJO4G'
+    attributes:
+        firstName: 'Zarek'
+        lastName: 'Ravenwood'
+        email: 'wizard@ourquest.com'
+        name: 'Zarek Ravenwood'
+        race: 'Elf'
+        class: 'Wizard'
+        photo: 'https://static.modolabs.com/xmodule_certification/user_images/wizard.png'
+        gold: '210'
+        skills:
+            - arcane lightning
+            - memorize scroll
+            - conjure monster
+        power: '15'
+---

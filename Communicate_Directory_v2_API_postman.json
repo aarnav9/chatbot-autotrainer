@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "07c0edf1-507a-484a-810c-362bb36fd9d3",
+		"name": "Communicate Directory v2 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13778420"
+	},
+	"item": [
+		{
+			"name": "List Recipients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recipient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients/{{recipient}}",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients",
+						"{{recipient}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recipient w/ Filters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n    \"filter\": \n    {\n        \"operator\": \"any\",\n        \"rules\": [\n            {\n                \"key\": \"comm_groups\",\n                \"operator\": \"array_any\",\n                \"value\": [\"staff\", \"freshman\"]\n            },\n            {\n                \"key\": \"id\",\n                \"operator\": \"string_in\",\n                \"value\": [\"russell\", \"person2\"]\n            },\n            {\n                \"key\": \"id\",\n                \"operator\": \"string_equals\",\n                \"value\": \"person4\"\n            }\n        ]\n    }\n}\n      "
+				},
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients?search=ber",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "ber"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recipient w/ Hashed Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients/{{hashed_recipient}}?hashed=true",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients",
+						"{{hashed_recipient}}"
+					],
+					"query": [
+						{
+							"key": "hashed",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create or Update Recipients",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"recipients\": [\n        {\n            \"id\": \"person1\",\n            \"attributes\": {\n                \"name\": \"Person 1\",\n                \"email\": \"person1@universitas.com\",\n                \"comm_groups\": [\n                    \"student\",\n                    \"staff\",\n                    \"science\",\n                    \"seniors\",\n                    \"class2022\"\n                ]\n            }\n        },\n        {\n            \"id\": \"person2\",\n            \"attributes\": {\n                \"name\": \"Person 2\",\n                \"email\": \"person2@universitas.com\",\n                \"comm_groups\": [\n                    \"student\",\n                    \"staff\",\n                    \"science\",\n                    \"seniors\",\n                    \"class2022\"\n                ]\n            }\n        },\n        {\n            \"id\": \"person3\",\n            \"attributes\": {\n                \"name\": \"Person 3\",\n                \"email\": \"person3@universitas.com\",\n                \"comm_groups\": [\n                    \"student\",\n                    \"staff\",\n                    \"theater\",\n                    \"freshman\",\n                    \"class2025\",\n                    \"online\"\n                ]\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Recipient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients/{{recipient}}",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients",
+						"{{recipient}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Recipient w/ Hashed Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.modo.communicate.v2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://communicate.modolabs.net/api/applications/{{application_identifier}}/{{target_type}}/recipients/{{hashed_recipient}}?hashed=true",
+					"protocol": "https",
+					"host": [
+						"communicate",
+						"modolabs",
+						"net"
+					],
+					"path": [
+						"api",
+						"applications",
+						"{{application_identifier}}",
+						"{{target_type}}",
+						"recipients",
+						"{{hashed_recipient}}"
+					],
+					"query": [
+						{
+							"key": "hashed",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "application_identifier",
+			"value": "your-application-identifier",
+			"type": "string"
+		},
+		{
+			"key": "target_type",
+			"value": "test",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "recipient",
+			"value": "person1",
+			"type": "string"
+		},
+		{
+			"key": "hashed_recipient",
+			"value": "f1001560-b5bc-5a59-a773-dd9c234f6802",
+			"type": "string"
+		}
+	]
+}

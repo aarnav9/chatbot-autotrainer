@@ -1,0 +1,520 @@
+{
+    "content":
+    [
+        {
+            "elementType": "forum",
+            "noItemsMessage": "No replies",
+            "topic":
+            {
+                "elementType": "forumItem",
+                "nameTag":
+                {
+                    "accessoryButton":
+                    {
+                        "elementType": "dropdown",
+                        "items":
+                        [
+                            {
+                                "title": "Mark as unread",
+                                "link":
+                                {
+                                    "backActionTarget": "grandparent",
+                                    "relativePath": "./mark-unread"
+                                }
+                            }
+                        ],
+                        "toggleSize": "small",
+                        "toggleActionStyle": "normal",
+                        "toggleBorderColor": "transparent",
+                        "accessoryIcon": "overflow",
+                        "showDisclosureIcon": false,
+                        "toggleTextColor": "theme:tertiary_text_color"
+                    },
+                    "description": "May 24, 2021 at 4:54 PM",
+                    "image":
+                    {
+                        "url": "https://randomuser.me/api/portraits/women/44.jpg"
+                    },
+                    "name": "Julia Leung"
+                },
+                "actions":
+                {
+                    "contents":
+                    [
+                        {
+                            "elementType": "sideBySide",
+                            "left":
+                            {
+                                "content":
+                                [
+                                    {
+                                        "actionType": "link",
+                                        "disabled": false,
+                                        "elementType": "linkButton",
+                                        "events":
+                                        [],
+                                        "link":
+                                        {
+                                            "external": "#",
+                                            "browserType": "systemBrowserEmbedded"
+                                        },
+                                        "title": "123_bar_foo.png",
+                                        "icon": "attachment",
+                                        "iconPosition": "left",
+                                        "size": "small"
+                                    }
+                                ]
+                            },
+                            "right":
+                            {
+                                "content":
+                                [
+                                    {
+                                        "actionType": "link",
+                                        "disabled": false,
+                                        "elementType": "linkButton",
+                                        "events":
+                                        [
+                                            {
+                                                "action": "toggle",
+                                                "animation": "slide",
+                                                "eventName": "click",
+                                                "targetId": "topic"
+                                            }
+                                        ],
+                                        "link":
+                                        {
+                                            "accessoryIcon": "comment",
+                                            "relativePath": ""
+                                        },
+                                        "title": "Reply to topic",
+                                        "icon": "reply",
+                                        "size": "small"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "content":
+                            [
+                                {
+                                    "elementType": "form",
+                                    "items":
+                                    [
+                                        {
+                                            "description": "",
+                                            "elementType": "input",
+                                            "inputType": "textarea",
+                                            "label": "Reply to Julia Leung:",
+                                            "name": "topic",
+                                            "required": false,
+                                            "value": null
+                                        },
+                                        {
+                                            "buttons":
+                                            [
+                                                {
+                                                    "accessoryIcon": null,
+                                                    "accessoryIconPosition": null,
+                                                    "actionType": null,
+                                                    "buttonType": "reset",
+                                                    "elementType": "formButton",
+                                                    "events":
+                                                    [
+                                                        {
+                                                            "action": "hide",
+                                                            "animation": "slide",
+                                                            "eventName": "click",
+                                                            "targetId": "topic"
+                                                        }
+                                                    ],
+                                                    "name": "cancel",
+                                                    "title": "Cancel"
+                                                },
+                                                {
+                                                    "actionType": "constructive",
+                                                    "disabled": false,
+                                                    "elementType": "linkButton",
+                                                    "events":
+                                                    [
+                                                        {
+                                                            "action": "hide",
+                                                            "animation": "slide",
+                                                            "eventName": "click",
+                                                            "targetId": "topic"
+                                                        },
+                                                        {
+                                                            "action": "submitForm",
+                                                            "eventName": "click",
+                                                            "targetId": "topicform"
+                                                        }
+                                                    ],
+                                                    "link": null,
+                                                    "title": "Submit"
+                                                }
+                                            ],
+                                            "elementType": "buttonContainer",
+                                            "horizontalAlignment": "right"
+                                        }
+                                    ],
+                                    "relativePath": "./reply",
+                                    "id": "topicform"
+                                }
+                            ],
+                            "elementType": "container",
+                            "hidden": true,
+                            "margin": "none",
+                            "id": "topic"
+                        }
+                    ]
+                },
+                "body": "<p>Body of original topic post goes here. Donec id elit non mi porta gravida eget metus. Cras mattis amet fermentum. Aenean lacinia nulla sed.</p><p>Lorem ipsum dolor sit amet elit?</p>",
+                "title": "Topic title goes here in this place ipsa scientia potestas est",
+                "quoteBody": "",
+                "quoteAuthor": ""
+            },
+            "itemsHeading":
+            {
+                "elementType": "blockHeading",
+                "heading": "Replies",
+                "marginBottom": "tight"
+            },
+            "items":
+            [
+                {
+                    "elementType": "forumItem",
+                    "nameTag":
+                    {
+                        "description": "May 24, 2021 at 9:11 PM",
+                        "image":
+                        {
+                            "url": "https://randomuser.me/api/portraits/men/70.jpg"
+                        },
+                        "name": "Marcus Bakerson"
+                    },
+                    "actions":
+                    {
+                        "contents":
+                        [
+                            {
+                                "elementType": "sideBySide",
+                                "left":
+                                {
+                                    "content":
+                                    [
+                                        {
+                                            "actionType": "link",
+                                            "disabled": false,
+                                            "elementType": "linkButton",
+                                            "events":
+                                            [],
+                                            "link":
+                                            {
+                                                "external": "#",
+                                                "browserType": "systemBrowserEmbedded"
+                                            },
+                                            "title": "xyz_123_foo_bar.jpg",
+                                            "icon": "attachment",
+                                            "iconPosition": "left",
+                                            "size": "small"
+                                        }
+                                    ]
+                                },
+                                "right":
+                                {
+                                    "content":
+                                    [
+                                        {
+                                            "actionType": "link",
+                                            "disabled": false,
+                                            "elementType": "linkButton",
+                                            "events":
+                                            [
+                                                {
+                                                    "action": "toggle",
+                                                    "animation": "slide",
+                                                    "eventName": "click",
+                                                    "targetId": "1"
+                                                }
+                                            ],
+                                            "link":
+                                            {
+                                                "accessoryIcon": "comment",
+                                                "relativePath": ""
+                                            },
+                                            "title": "Reply",
+                                            "icon": "reply",
+                                            "size": "small"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "content":
+                                [
+                                    {
+                                        "elementType": "form",
+                                        "items":
+                                        [
+                                            {
+                                                "description": "",
+                                                "elementType": "input",
+                                                "inputType": "textarea",
+                                                "label": "Reply to Marcus Bakerson:",
+                                                "name": "1",
+                                                "required": false,
+                                                "value": null
+                                            },
+                                            {
+                                                "buttons":
+                                                [
+                                                    {
+                                                        "accessoryIcon": null,
+                                                        "accessoryIconPosition": null,
+                                                        "actionType": null,
+                                                        "buttonType": "reset",
+                                                        "elementType": "formButton",
+                                                        "events":
+                                                        [
+                                                            {
+                                                                "action": "hide",
+                                                                "animation": "slide",
+                                                                "eventName": "click",
+                                                                "targetId": "1"
+                                                            }
+                                                        ],
+                                                        "name": "cancel",
+                                                        "title": "Cancel"
+                                                    },
+                                                    {
+                                                        "actionType": "constructive",
+                                                        "disabled": false,
+                                                        "elementType": "linkButton",
+                                                        "events":
+                                                        [
+                                                            {
+                                                                "action": "hide",
+                                                                "animation": "slide",
+                                                                "eventName": "click",
+                                                                "targetId": "1"
+                                                            },
+                                                            {
+                                                                "action": "submitForm",
+                                                                "eventName": "click",
+                                                                "targetId": "1form"
+                                                            }
+                                                        ],
+                                                        "link": null,
+                                                        "title": "Submit"
+                                                    }
+                                                ],
+                                                "elementType": "buttonContainer",
+                                                "horizontalAlignment": "right"
+                                            }
+                                        ],
+                                        "relativePath": "./reply",
+                                        "id": "1form"
+                                    }
+                                ],
+                                "elementType": "container",
+                                "hidden": true,
+                                "margin": "none",
+                                "id": "1"
+                            }
+                        ]
+                    },
+                    "body": "<p>Replies are in chronological order (with the newest at <em>bottom</em> instead of top).</p><p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper.</p>",
+                    "title": "",
+                    "quoteBody": "",
+                    "quoteAuthor": ""
+                },
+                {
+                    "elementType": "forumItem",
+                    "nameTag":
+                    {
+                        "description": "May 24, 2021 at 11:23 PM",
+                        "image":
+                        {
+                            "url": "https://static.modolabs.com/xmodule/courses/fpo-profile.png"
+                        },
+                        "name": "Joanne McBeath"
+                    },
+                    "actions":
+                    {
+                        "contents":
+                        [
+                            {
+                                "elementType": "sideBySide",
+                                "left":
+                                {
+                                    "content":
+                                    []
+                                },
+                                "right":
+                                {
+                                    "content":
+                                    [
+                                        {
+                                            "actionType": "link",
+                                            "disabled": false,
+                                            "elementType": "linkButton",
+                                            "events":
+                                            [
+                                                {
+                                                    "action": "toggle",
+                                                    "animation": "slide",
+                                                    "eventName": "click",
+                                                    "targetId": "2"
+                                                }
+                                            ],
+                                            "link":
+                                            {
+                                                "accessoryIcon": "comment",
+                                                "relativePath": ""
+                                            },
+                                            "title": "Reply",
+                                            "icon": "reply",
+                                            "size": "small"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "content":
+                                [
+                                    {
+                                        "elementType": "form",
+                                        "items":
+                                        [
+                                            {
+                                                "description": "",
+                                                "elementType": "input",
+                                                "inputType": "textarea",
+                                                "label": "Reply to Joanne McBeath:",
+                                                "name": "2",
+                                                "required": false,
+                                                "value": null
+                                            },
+                                            {
+                                                "buttons":
+                                                [
+                                                    {
+                                                        "accessoryIcon": null,
+                                                        "accessoryIconPosition": null,
+                                                        "actionType": null,
+                                                        "buttonType": "reset",
+                                                        "elementType": "formButton",
+                                                        "events":
+                                                        [
+                                                            {
+                                                                "action": "hide",
+                                                                "animation": "slide",
+                                                                "eventName": "click",
+                                                                "targetId": "2"
+                                                            }
+                                                        ],
+                                                        "name": "cancel",
+                                                        "title": "Cancel"
+                                                    },
+                                                    {
+                                                        "actionType": "constructive",
+                                                        "disabled": false,
+                                                        "elementType": "linkButton",
+                                                        "events":
+                                                        [
+                                                            {
+                                                                "action": "hide",
+                                                                "animation": "slide",
+                                                                "eventName": "click",
+                                                                "targetId": "2"
+                                                            },
+                                                            {
+                                                                "action": "submitForm",
+                                                                "eventName": "click",
+                                                                "targetId": "2form"
+                                                            }
+                                                        ],
+                                                        "link": null,
+                                                        "title": "Submit"
+                                                    }
+                                                ],
+                                                "elementType": "buttonContainer",
+                                                "horizontalAlignment": "right"
+                                            }
+                                        ],
+                                        "relativePath": "./reply",
+                                        "id": "2form"
+                                    }
+                                ],
+                                "elementType": "container",
+                                "hidden": true,
+                                "margin": "none",
+                                "id": "2"
+                            }
+                        ]
+                    },
+                    "body": "<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet?</p>",
+                    "title": "",
+                    "quoteBody": "This is the quote body.",
+                    "quoteAuthor": "Jenny Northcott"
+                }
+            ]
+        }
+    ],
+    "contentContainerWidth": "narrow",
+    "header":
+    [
+        {
+            "elementType": "toolbar",
+            "left":
+            [
+                {
+                    "elementType": "toolbarLabel",
+                    "label": "1 of 5"
+                }
+            ],
+            "middle":
+            [],
+            "right":
+            [
+                {
+                    "actionType": null,
+                    "disabled": false,
+                    "elementType": "linkButton",
+                    "events":
+                    [],
+                    "link":
+                    {
+                        "backActionTarget": "parent",
+                        "relativePath": "./course/assignments/1/"
+                    },
+                    "title": "",
+                    "icon": "previous",
+                    "iconPosition": "iconOnly"
+                },
+                {
+                    "actionType": null,
+                    "disabled": false,
+                    "elementType": "linkButton",
+                    "events":
+                    [],
+                    "link":
+                    {
+                        "backActionTarget": "parent",
+                        "relativePath": "./course/assignments/3/"
+                    },
+                    "title": "",
+                    "icon": "next",
+                    "iconPosition": "iconOnly"
+                }
+            ]
+        }
+    ],
+    "metadata":
+    {
+        "version": "2",
+        "pageTitle": "Discussion"
+    },
+    "regionContent":
+    []
+}

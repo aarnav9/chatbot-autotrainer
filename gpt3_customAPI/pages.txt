@@ -1,0 +1,1755 @@
+html
+
+
+
+
+
+
+
+
+
+
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", " UA-34244821-1", {"groups":"default","anonymize_ip":true,"page_placeholder":"PLACEHOLDER_page_path"});gtag("config", "AW-707993582", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});gtag('event', 'conversion', {'send_to': 'AW-707993582/_ykiCNzt1YsCEO6_zNEC'});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Benchmarks | College of Computer, Mathematical, and Natural Sciences | University of Maryland
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/3275","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":{},"trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"statistics":{"data":{"nid":"3275"},"url":"\/core\/modules\/statistics\/statistics.php"},"ajaxTrustedUrl":{"\/search\/node":true},"gavias_load_ajax_view":{},"user":{"uid":0,"permissionsHash":"14d6fd6c6f136c2d7404206aa09fe5d64d4d12173e376f3be094f7a0dec63893"}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .navigation .gva_menu ul li a .icaret {display :none;}ul.sf-menu.sf-style-coffee li li li {width: 152px;}ul.sf-menu.sf-style-coffee li li li li{width: 122px;}.team-single-page .team-name .job {font-size: 1.1em;font-weight: 300;}.gsc-accordion .panel-group.skin-white-border .panel .panel-title a:hover {color: #CD2122;}.team-teaser-1 .team-job {font-size: 13px;color: #000;}.field--name-field-team-email a{font-size: 12px;}.owl-carousel .owl-nav{margin-top: -25px;}.event-block { min-height: 520px;}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Skip to main content
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    About
+                      
+
+
+
+
+
+
+
+
+
+                    Meet the Dean
+            
+        
+
+
+
+
+
+
+
+                    College Administration
+            
+        
+
+
+
+
+
+
+
+                    Diversity & Inclusion
+                      
+
+
+
+
+
+
+
+
+
+                    Advisory Council
+            
+        
+
+
+
+
+
+
+
+                    TerrapinSTRONG
+            
+        
+
+
+
+
+
+
+
+                    Student Organizations
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    Alumni
+            
+        
+
+
+
+
+
+
+
+                    Giving
+            
+        
+
+
+
+
+
+
+
+                    Faculty & Staff
+                      
+
+
+
+
+
+
+
+
+
+                    Endowed Chairs & Professors
+            
+        
+
+
+
+
+
+
+
+                    Distinguished University Professors
+            
+        
+
+
+
+
+
+
+
+                    Faculty Honors and Awards
+            
+        
+
+
+
+
+
+
+
+                    Faculty Resources
+            
+        
+
+
+
+
+
+
+
+                    CMNS Teaching & Learning Center
+            
+        
+
+
+
+
+
+
+
+                    College Awards
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    Board of Visitors
+            
+        
+
+
+
+
+
+
+
+                    Circle of Discovery
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    Undergraduate
+                      
+
+
+
+
+
+
+
+
+
+                    Future Students
+                      
+
+
+
+
+
+
+
+
+
+                    Majors & Minors
+            
+        
+
+
+
+
+
+
+
+                    Admissions
+            
+        
+
+
+
+
+
+
+
+                    Plan a Visit
+            
+        
+
+
+
+
+
+
+
+                    Recruitment Ambassadors
+            
+        
+
+
+
+
+
+
+
+                    Living & Learning Programs
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    Current Students
+                      
+
+
+
+
+
+
+
+
+
+                    Advising and Academic Planning
+            
+        
+
+
+
+
+
+
+
+                    Career Ready
+            
+        
+
+
+
+
+
+
+
+                    Student Organizations
+            
+        
+
+
+
+
+
+
+
+                    Academic Support & Tutoring
+            
+        
+
+
+
+
+
+
+
+                    Scholarships
+            
+        
+
+
+
+
+
+
+
+                    Graduation Information
+            
+        
+
+
+
+
+
+
+
+                    Undergraduate Teaching Opportunities
+            
+        
+
+
+
+
+
+
+
+                    Undergraduate Listserv
+            
+        
+
+
+
+
+
+
+
+                    Undergraduate Program Staff
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Graduate
+                      
+
+
+
+
+
+
+
+
+
+                    Degree Programs
+            
+        
+
+
+
+
+
+
+
+                    Admissions
+            
+        
+
+
+
+
+
+
+
+                    Graduate Fellowships
+            
+        
+
+
+
+
+
+
+
+                    Student Organizations
+            
+        
+
+
+
+
+
+
+
+                    CMNS Teaching & Learning Center
+            
+        
+
+
+
+
+
+
+
+                    Graduation Information
+            
+        
+
+
+
+
+
+
+
+                    Science Academy
+                      
+
+
+
+
+
+
+
+
+
+                    About
+            
+        
+
+
+
+
+
+
+
+                    Bioinformatics & Computational Biology
+            
+        
+
+
+
+
+
+
+
+                    Data Science & Analytics
+            
+        
+
+
+
+
+
+
+
+                    Machine Learning
+            
+        
+
+
+
+
+
+
+
+                    Quantum Computing
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Departments
+            
+        
+
+
+
+
+
+
+
+                    Research
+                      
+
+
+
+
+
+
+
+
+
+                    Research Institutes & Centers
+            
+        
+
+
+
+
+
+
+
+                    Partnerships
+            
+        
+
+
+
+
+
+
+
+                    Solving Grand Challenges
+                      
+
+
+
+
+
+
+
+
+
+                    Climate Change
+            
+        
+
+
+
+
+
+
+
+                    Artificial Intelligence
+            
+        
+
+
+
+
+
+
+
+                    Human Disease
+            
+        
+
+
+
+
+
+
+
+                    Quantum Computing
+            
+        
+
+
+
+
+
+
+
+                    Space Exploration
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    Shared Research Facilities
+            
+        
+
+
+
+
+
+
+
+                    Innovation
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    News & Events
+                      
+
+
+
+
+
+
+
+
+
+                    News
+            
+        
+
+
+
+
+
+
+
+                    Events
+                      
+
+
+
+
+
+
+
+
+
+                    Science on Tap
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+                    Odyssey Magazine
+            
+        
+
+
+
+
+
+
+
+                    Newsletters
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Benchmarks 
+
+
+
+
+
+
+
+
+
+
+
+
+Breadcrumb
+
+
+
+
+
+
+Home
+
+
+ - 
+
+
+
+
+
+
+Undergraduate
+
+
+ - 
+
+
+
+
+
+
+Current Students
+
+
+ - 
+
+
+
+
+
+
+Advising and Academic Planning
+
+
+ - 
+
+
+
+
+
+
+Academic Planning
+
+
+ - 
+
+
+
+
+
+
+
+
+
+                          Benchmarks
+                          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Start Display article for detail page 
+
+
+
+
+
+
+
+
+
+
+
+
+Benchmarks
+
+
+
+
+
+
+
+
+
+
+
+
+As part of the campus Student Academic Success-Degree Completion Policy, undegraduates are expected to make satisfactory completion of benchmark requirements. Highlights of the Policy are below.
+
+
+Full-time degree-seeking students are expected to graduate in four years.
+
+
+Students are expected to create and update a 
+four year plan
+ towards graduation.
+
+
+Students are expected to successfully pass important benchmark courses by certain semesters to ensure they are on track to graduate in a timely fashion.
+
+
+The exact benchmark courses and timeframe for completion vary by 
+major
+.
+
+
+Students who do not successfully pass benchmark requirements risk being dismissed from their major.
+
+
+Students with questions about benchmark requirements should contact their academic advisor. 
+
+
+Specific benchmark requirements by major
+
+
+The specific benchmark requirements listed below require a "C-" or better for all science and math courses and are based on the semester in the major unless specified otherwise.
+
+
+Astronomy
+
+Second semester benchmark
+
+ASTR 120, 121
+
+MATH 140
+
+Fourth semester benchmark
+
+MATH 141
+
+PHYS 171, 174, 272
+
+MATH 241
+
+
+Atmospheric & Oceanic Science
+
+Second semester benchmark
+
+PHYS 161 OR 171
+
+CHEM 135 AND CHEM 132 OR 136
+
+MATH 140, 141
+
+AOSC 200, 201
+
+Fourth semester benchmark
+
+MATH 241, 246
+
+PHYS 272, 273, 275
+
+Computer Programming course
+
+Two 400-level AOSC Courses
+
+
+Biological Sciences
+
+
+Visit the 
+Biological Sciences benchmark webpage
+ for details on specific benchmark requirements.
+
+
+Biochemistry and Chemistry
+
+
+Download the the Chemistry and Biochemistry 
+benchmark pdf
+ for details on specific benchmark requirements.
+
+
+Computer Science
+
+
+Visit the 
+Computer Science website
+ for details on specific benchmark requirements.
+
+
+ 
+
+
+Geology (all tracks)
+
+Second semester benchmark
+
+Two additional Gen Ed courses
+
+Four 3-4 credit major courses
+
+Fourth semester benchmark
+
+MATH 140, 141
+
+PHYS 141 OR PHYS 161/174
+
+Two 3-4 credit major courses
+
+
+Math (Applied, Traditional, and Statistics Tracks)
+
+Second semester benchmark
+
+MATH 140, 141
+
+Three Gen Ed courses
+
+Fourth semester benchmark
+
+MATH 240, 241, 246, 310
+
+Computer Science requirement
+
+Sixth semester benchmark
+
+MATH 410
+
+Two 400-LEVEL AMSC MATH/STAT Courses
+Math (Secondary Education track)
+
+Second semester benchmark
+
+MATH 140, 141
+
+Three Gen Ed courses
+
+Fourth semester benchmark
+
+MATH 240, 241, 310
+
+Computer Science requirement
+
+Sixth semester benchmark
+
+MATH 410
+
+Two 400-LEVEL AMSC MATH/STAT Courses
+
+
+Neuroscience
+
+
+Visit 
+https://lep.umd.edu/neuro-lep.pdf
+.
+
+
+Physics-Professional track
+
+Second semester benchmark
+
+PHYS 171, 174
+
+MATH 140, 141
+
+Fourth semester benchmark
+
+PHYS 272, 273, 274**, 275, 276
+
+MATH 241, 246
+
+**Students planning to complete second majors that require MATH 246 and MATH240/461 can substitute these courses for PHYS274.
+Physics-Education track
+
+Second semester benchmark
+
+ENGL 101
+
+PHYS 171, 174
+
+MATH 140, 141
+
+Fourth semester benchmark
+
+PHYS 272, 273, 275, 276
+
+MATH 241, 246
+Physics-Meteorology track
+
+Second semester benchmark
+
+PHYS 171, 174
+
+MATH 140, 141
+
+Fourth semester benchmark
+
+PHYS 272, 273, 275, 276
+
+MATH 241, 246
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Sidebar Left 
+
+
+
+
+
+
+
+
+
+
+ End Sidebar Left 
+
+
+ Sidebar Right 
+
+
+ End Sidebar Right 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+Connect with Us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quick Links
+
+
+
+
+
+
+
+
+ Employment
+
+
+ UMD Home
+
+
+ Privacy Notice
+
+
+ Web Accessibility
+
+
+ Webmaster
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Visit Us
+
+
+
+
+
+
+
+
+Dean's Office: 3400 A.V. Williams Building
+Undergraduate Student Services: 1300 Symons Hall
+University of Maryland 
+College Park, MD 20742
+
+ Contact Us
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
